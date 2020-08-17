@@ -96,7 +96,6 @@ clearlistener()
 			vy=readfloat f
 			vz=readfloat f
 
-			--boneindex = readlong f #unsigned
 			b1 = readbyte f #unsigned + 1
 			b2 = readbyte f #unsigned + 1
 			b3 = readbyte f #unsigned + 1
@@ -228,7 +227,6 @@ clearlistener()
 
 		for i=1 to boneCount do (
 			append bones (ReadBone f)
-			--print(bones[i])
 		)
 
 		fseek f (offsetToAnimID) #seek_set
